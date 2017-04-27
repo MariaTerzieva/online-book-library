@@ -1,0 +1,38 @@
+module GenreHelper
+  def genres
+    [
+      "Art",
+      "Biography",
+      "Business",
+      "Chick Lit",
+      "Children's",
+      "Christian",
+      "Classics",
+      "Comics",
+      "Contemporary",
+      "Cookbooks",
+      "Crime",
+      "Fantasy",
+      "Fiction",
+      "Historical Fiction",
+      "History",
+      "Horror",
+      "Humor and Comedy",
+      "Memoir",
+      "Music",
+      "Mystery",
+      "Philosophy",
+      "Poetry",
+      "Psychology",
+      "Religion",
+      "Romance",
+      "Science",
+      "Science Fiction",
+      "Self Help",
+      "Suspense",
+      "Sports",
+      "Travel",
+      "Young Adult",
+    ]
+  end
+end
