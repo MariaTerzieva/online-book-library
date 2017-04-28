@@ -1,0 +1,11 @@
+.page-header
+  h1 Advanced Search
+
+= simple_form_for @search do |f|
+  = f.input :keywords
+  = f.input :genre, collection: genres, prompt: "Select a genre"
+  = f.input :min_pages
+  = f.input :max_pages
+  
+  .bnt-toolbar
+    = f.button :submit, class: 'btn btn-lg btn-success'
