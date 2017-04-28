@@ -4,7 +4,7 @@ class BooksController < ApplicationController
   before_action :set_book, only: [:edit, :update, :destroy]
 
   def index
-    @books = Book.search(params[:search]).paginate(per_page: 3, page: params[:page])
+    @books = Book.order(created_at: :desc).paginate(per_page: 3, page: params[:page])
     respond_with @books
   end
 
