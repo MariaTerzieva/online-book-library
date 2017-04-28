@@ -1,5 +1,3 @@
-== README
-
 This README gives step by step instructions on how to run the app.
 
 Complete list of the gems used can be found in the Gemfile.
