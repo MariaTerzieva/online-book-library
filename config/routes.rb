@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'sign_up' => 'users#new', as: 'sign_up'
+  get 'log_in' => 'sessions#new', as: 'log_in'
+  get 'log_out' => 'sessions#destroy', as: 'log_out'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -7,8 +11,8 @@ Rails.application.routes.draw do
 
   resources :books, except: [:show]
   resources :searches
-
-
+  resources :users
+  resources :sessions
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

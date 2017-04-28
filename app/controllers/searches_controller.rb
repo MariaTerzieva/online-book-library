@@ -1,4 +1,6 @@
 class SearchesController < ApplicationController
+  before_filter :authorize
+
   def new
     @search = Search.new
   end
