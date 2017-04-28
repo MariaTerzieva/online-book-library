@@ -1,28 +1,38 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This README gives step by step instructions on how to run the app.
 
-Things you may want to cover:
+Complete list of the gems used can be found in the Gemfile.
 
-* Ruby version
+How to run the app:
 
-* System dependencies
+* First clone this repository to your machine
 
-* Configuration
+* Next run `bundle install` to install the gems
 
-* Database creation
+* Run `rake db:migrate`
 
-* Database initialization
+* Run `rake db:test:prepare` (Although there is just one test. I didn't have time to write the others.)
 
-* How to run the test suite
+* Open the project in a console and run `rails s`
 
-* Services (job queues, cache servers, search engines, etc.)
+* Open http://localhost:3000 to go to the website
 
-* Deployment instructions
+* You need to first sign up and then you can log in with your credentials
 
-* ...
+Notes:
 
+* You can create books without being logged in but you can view existing books
+and modify them only when logged in
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+* The front-end side doesn't look very good due to lack of time.
+
+* There is just one test. I didn't have time for others. I tried but ran into some
+technical problems and decided that it is wiser to implement the functionality and
+not lose more of the time trying to fix these problems because time was running out.
+
+* I also implemented the search functionality a little bit different than required
+because time was running out and I decided that it is better that I have the functionality
+even if it looks different than required.
+
+* To have pagination you need to have at least 4 books.
