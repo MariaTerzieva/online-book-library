@@ -6,6 +6,8 @@ How to run the app:
 
 * First clone this repository to your machine
 
+* Install imagemagick if you don't have it with `sudo apt-get install libmagickwand-dev imagemagick` on Ubuntu-based machines and `brew install imagemagick` for Mac
+
 * Next run `bundle install` to install the gems
 
 * Run `rake db:migrate`
@@ -21,16 +23,22 @@ How to run the app:
 Notes:
 
 * You can create books without being logged in but you can view existing books
-and modify them only when logged in
-
-* The front-end side doesn't look very good due to lack of time.
-
-* There is just one test. I didn't have time for others. I tried but ran into some
-technical problems and decided that it is wiser to implement the functionality and
-not lose more of the time trying to fix these problems because time was running out.
-
-* I also implemented the search functionality a little bit different than required
-because time was running out and I decided that it is better that I have the functionality
-even if it looks different than required.
+and modify them only when logged in.
 
 * To have pagination you need to have at least 4 books.
+
+Things to improve in the future:
+
+* Do searching with AJAX and don't store searches in the database
+
+* Write tests
+
+* Fix the style of the button on the edit page
+
+* Add navigation links
+
+* After sign up log in the user
+
+* Use rubocop
+
+* Fix redirect URLs when some field not filled or filled wrong
