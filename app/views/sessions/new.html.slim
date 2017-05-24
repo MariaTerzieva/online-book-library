@@ -1,10 +1,10 @@
-h1 Log In
-= form_tag sessions_path
-  p
-    = label_tag :email
-    = text_field_tag :email, params[:email]
-  p
-    = label_tag :password
-    = password_field_tag :password
-  p
-    = submit_tag
+.page-header
+  h1 LOG IN
+
+= bootstrap_form_tag url: sessions_path do |f|
+  .col-md-3
+    = f.email_field :email
+    = f.password_field :password
+
+    .btn-toolbar
+      = f.submit "Log In", class: 'btn btn-space btn-success'

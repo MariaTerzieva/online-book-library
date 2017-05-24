@@ -1,8 +1,10 @@
 = simple_form_for(@book) do |f|
-  = f.input :title
-  = f.file_field :cover, onchange: "validateFiles(this);", data: { max_file_size: 1.megabytes }
-  = f.input :genre, collection: genres, prompt: "Select a genre"
-  = f.input :page_count
+  .col-md-3
+    = f.input :title
+    = f.input :genre, collection: genres, prompt: "Select a genre"
+    = f.input :page_count
+    = f.file_field :cover, onchange: "validateFiles(this);", data: { max_file_size: 1.megabytes },
+      class: "filestyle", "data-buttonText" => "Choose cover", "data-input" => "false"
 
-  .btn-toolbar
-    = f.button :submit, class: 'btn btn-lg btn-success'
+    .btn-toolbar
+      = f.button :submit, class: 'btn btn-space btn-success'
