@@ -19,7 +19,7 @@
           - @books.each do |book|
             tr
               td = link_to book.title, edit_book_path(book)
-              td = book.cover
+              td = image_tag book.cover.thumb.url.to_s
               td = book.genre
               td = book.page_count
               td

@@ -14,6 +14,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'simple_form'
 gem 'slim-rails'
 gem 'carrierwave', '~> 1.0'
+gem 'mini_magick'
 gem 'bootstrap-sass', '~> 3.2.0.2'
 gem 'autoprefixer-rails'
 gem 'responders', '~> 2.0'
